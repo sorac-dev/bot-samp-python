@@ -7,6 +7,7 @@
 - Verificación de cuentas de usuarios en el servidor SA-MP desde un canal designado.
 - Funciones de moderación para mantener un ambiente seguro y ordenado.
 - Integración entre tu servidor SA-MP y Discord de manera sencilla.
+- Crear embeds en tu servidor mediante un comando.
 
 ## Configuración
 
