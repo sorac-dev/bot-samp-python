@@ -17,6 +17,9 @@ Sigue estos pasos para poner en marcha el bot en tu servidor:
 3. En las líneas (106, 107, 108) del código, establece los ID de los roles en Discord que corresponden a los rangos de administración en tu servidor.
 4. En la "línea 134", asegúrate de ingresar el ID del rol asignado a los usuarios verificados.
 
+## Importante sobre tu gamemode
+> Es importante tener en cuenta que la implementación de este bot requerirá adaptaciones significativas para que coincida con la estructura y lógica específicas de tu servidor SA-MP y cómo está programado tu gamemode. Las consultas a la base de datos MySQL también deberán ser ajustadas para que se ajusten a tu entorno de trabajo y esquema de base de datos. Cada servidor SA-MP es único, por lo que se recomienda realizar las modificaciones necesarias para que el bot funcione de manera eficiente y coherente con tus necesidades particulares. La flexibilidad y personalización son clave para asegurar una integración exitosa entre este bot y tu servidor SA-MP.
+
 ## Contribuciones
 
 Aunque soy principiante en el desarrollo de bots, he creado esta herramienta con la intención de facilitar la vinculación entre servidores SA-MP y Discord. Si eres un desarrollador experimentado y encuentras áreas de mejora en el código, te invito a contribuir al repositorio. Cualquier actualización o mejora será bienvenida, siempre y cuando mantenga buenas prácticas de programación y no cause problemas.
