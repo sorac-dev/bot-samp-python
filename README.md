@@ -25,6 +25,15 @@ Aunque soy principiante en el desarrollo de bots, he creado esta herramienta con
 
 *Nota: Este README.md está sujeto a cambios y actualizaciones a medida que el bot se desarrolla y mejora.*
 
+## Donaciones
+
+Si encuentras útil este proyecto y deseas apoyar su desarrollo continuo, considera realizar una donación. Cualquier contribución es muy apreciada y nos ayudará a mantener y mejorar este bot.
+
+**PayPal**: [sorac.games@gmail.com](mailto:sorac.games@gmail.com)
+
+¡Gracias por tu generosidad y apoyo!
+
+  *Nota #2: Respetar creditos*
 ## Créditos de Bibliotecas
 
 Agradecemos a las siguientes bibliotecas y proyectos de código abierto por hacer posible este proyecto:
@@ -61,13 +70,3 @@ Agradecemos a las siguientes bibliotecas y proyectos de código abierto por hace
 - yarg
 - yarl
 - youtube-dl
-
-## Donaciones
-
-Si encuentras útil este proyecto y deseas apoyar su desarrollo continuo, considera realizar una donación. Cualquier contribución es muy apreciada y nos ayudará a mantener y mejorar este bot.
-
-**PayPal**: [sorac.games@gmail.com](mailto:sorac.games@gmail.com)
-
-¡Gracias por tu generosidad y apoyo!
-
-  *Nota #2: Respetar creditos*
