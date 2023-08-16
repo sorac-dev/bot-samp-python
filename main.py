@@ -1,6 +1,7 @@
 import hashlib
 import string
 import discord
+import asyncio
 import os
 from dotenv import load_dotenv
 from samp_client.client import SampClient
@@ -21,10 +22,21 @@ botname = os.getenv('BOT_NAME')
 #=============================#
 bot = discord.Bot()
 
+async def update_player_count():
+    while True:
+        with SampClient(address='s1.fenixzone.com', port='7777') as client:
+            info = client.get_server_info()
+            jugando = info.players
+            
+            # Actualizar el estado del bot
+            await bot.change_presence(activity=discord.Game(name=f"{botname} con {jugando} jugadores"))
+
+        await asyncio.sleep(60) //Esperamos 60 segundos para actualizar el estado de bot con los jugadores actuales.
+        
 @bot.event
 async def on_ready():
     #El bot esta jugando, actualmente el nombre del bot o servidor.
-    await bot.change_presence(activity=discord.Game(name=f"{botname}"))
+    bot.loop.create_task(update_player_count())
 
     bot.add_view(verificarBoton())
     
