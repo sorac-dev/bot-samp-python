@@ -31,7 +31,7 @@ async def update_player_count():
             # Actualizar el estado del bot
             await bot.change_presence(activity=discord.Game(name=f"{botname} con {jugando} jugadores"))
 
-        await asyncio.sleep(60) //Esperamos 60 segundos para actualizar el estado de bot con los jugadores actuales.
+        await asyncio.sleep(60)
         
 @bot.event
 async def on_ready():
@@ -84,7 +84,7 @@ def obtenerUserID(user_name):
         return "Usuario desconocido"
 #Encriptador de contraseñás
 def EncriptarPassword(data):
-    #Esto es algo adicional, que se le combina con la contraseñá del usuario
+    #Esto es algo adicional, que se le combina con la contraseñá del usuario, debe ser igual al de tu Gamemode Zone (WZ)
     token_sha256 = "gz.rp@!28"
     #Aqui unimos la contraseñá y el token unico (El token debe ser unico por lo tanto no debe ser mostrado a nadie)
     encriptacion_reforzada = data + token_sha256
@@ -115,9 +115,8 @@ def verificar_tiempo(tiempo):
 #=============================#
 #       Roles de moderacion   #
 #=============================#
-SUPERMODS = [1114681666150076498] 
-MODS = [1106278830852808845]
-MODERADOR = 1106278830852808845
+SUPERMODS = os.getenv('ROL_SUPERMOD_ID')
+MODS = os.getenv('ROL_MOD_ID')
 #=============================#
 #       Clases del bot        #
 #=============================#
@@ -141,7 +140,7 @@ class verificarForm(discord.ui.Modal):
             if clave == result[2]: #Verificamos que la contraseña sea igual a la ingresada
                 if result[3] == 0: #Verificamos que aun no tenga vinculado algun discord
                     try:
-                        role_id = 1106280824346783755  # ID del rol "Usuario"
+                        role_id = 1144847820424228914  # ID del rol "Usuario"
                         role = discord.utils.get(interaction.guild.roles, id=role_id)
                         if role in interaction.user.roles:
                             await interaction.respond(f"**[!]** {usuario}, ya estas verificado en el servidor de discord.", ephemeral=True)
@@ -264,7 +263,7 @@ async def embed(ctx, titulo, descripcion, color_embed: str, contentenido,banner_
         await ctx.respond("No estas autorizado para usar este comando.", ephemeral=True)
 @crear.command(name="verificacion", description="Crea el dialogo de verificacion")
 async def verificacion(ctx):
-    if ctx.author.id == 352897123014148096: #id canal verificar
+    if ctx.author.id == os.getenv('OWNER_ID'):
         embed = discord.Embed(title="Verificacion (Cuentas) | GreenZone Roleplay")
         embed.add_field(name="Informacion", value="Vincula y verifica la cuenta del servidor con la de nuestro discord.")
         embed.set_image(url="https://cdn.discordapp.com/attachments/1114178012397719552/1115847426046185482/DA7GnGE.png")
