@@ -13,10 +13,18 @@
 
 Sigue estos pasos para poner en marcha el bot en tu servidor:
 
-1. Instala los requisitos necesarios ejecutando el comando `pip install -r requirements.txt`.
-2. Configura la conexión MySQL de tu servidor y la dirección IP en el archivo `.env`. Esta configuración es esencial para el correcto funcionamiento del bot.
-3. En las líneas (106, 107, 108) del código, establece los ID de los roles en Discord que corresponden a los rangos de administración en tu servidor.
-4. En la "línea 134", asegúrate de ingresar el ID del rol asignado a los usuarios verificados.
+1. Esta es la instalacion de lo encesario, recuerda que debe ejecutarse en un terminal.
+
+> Instalacion manual
+- `pip install samp-client`
+- `pip install python-dotenv`
+- `pip install mysql-connector-python`
+- `pip install py-cord`
+
+> Instalacion automatica
+- `pip install -r requirements.txt`
+
+2. Configura la conexión MySQL de tu servidor y la dirección IP en el archivo `.env`. Esta configuración es esencial para el correcto funcionamiento del bot. Tambien estara todo el resto de configuracion en el mismo archivo.
 
 ## Importante sobre tu gamemode
 > Es importante tener en cuenta que la implementación de este bot requerirá adaptaciones significativas para que coincida con la estructura y lógica específicas de tu servidor SA-MP y cómo está programado tu gamemode. Las consultas a la base de datos MySQL también deberán ser ajustadas para que se ajusten a tu entorno de trabajo y esquema de base de datos. Cada servidor SA-MP es único, por lo que se recomienda realizar las modificaciones necesarias para que el bot funcione de manera eficiente y coherente con tus necesidades particulares. La flexibilidad y personalización son clave para asegurar una integración exitosa entre este bot y tu servidor SA-MP.
@@ -42,35 +50,21 @@ Si encuentras útil este proyecto y deseas apoyar su desarrollo continuo, consid
 
 Agradecemos a las siguientes bibliotecas y proyectos de código abierto por hacer posible este proyecto:
 
-- aiohttp
-- aiosignal
-- altgraph
-- async-timeout
-- attrs
-- certifi
-- cffi
-- charset-normalizer
-- click
-- colorama
-- discord
-- docopt
-- frozenlist
-- idna
-- multidict
-- mysql-connector-python
-- pefile
-- pipreqs
-- protobuf
-- py-cord
-- pycparser
-- pyinstaller
-- pyinstaller-hooks-contrib
-- PyNaCl
-- python-dotenv
-- pywin32-ctypes
-- requests
-- samp-client
-- urllib3
-- yarg
-- yarl
-- youtube-dl
+- aiohttp==3.8.5
+- aiosignal==1.3.1
+- async-timeout==4.0.3
+- attrs==23.1.0
+- certifi==2023.7.22
+- charset-normalizer==3.2.0
+- frozenlist==1.4.0
+- idna==3.4
+- multidict==6.0.4
+- mysql-connector-python==8.1.0
+- protobuf==4.21.12
+- py-cord==2.4.1
+- python-dotenv==1.0.0
+- requests==2.31.0
+- samp-client==3.0.1
+- urllib3==2.0.4
+- yarl==1.9.2
+
