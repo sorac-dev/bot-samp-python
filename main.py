@@ -17,6 +17,8 @@ server_ip = os.getenv('SERVER_IP')
 server_port = os.getenv('SERVER_PORT')
 botname = os.getenv('BOT_NAME')
 
+owner_id = 352897123014148096
+
 #=============================#
 #          Cargando bot       #
 #=============================#
@@ -115,8 +117,8 @@ def verificar_tiempo(tiempo):
 #=============================#
 #       Roles de moderacion   #
 #=============================#
-SUPERMODS = os.getenv('ROL_SUPERMOD_ID')
-MODS = os.getenv('ROL_MOD_ID')
+SUPERMODS = [1144847700773326938, 1144847700773326938]
+MODS = [1144847700773326938, 1144847700773326938]
 #=============================#
 #       Clases del bot        #
 #=============================#
@@ -140,7 +142,7 @@ class verificarForm(discord.ui.Modal):
             if clave == result[2]: #Verificamos que la contraseña sea igual a la ingresada
                 if result[3] == 0: #Verificamos que aun no tenga vinculado algun discord
                     try:
-                        role_id = 1144847820424228914  # ID del rol "Usuario"
+                        role_id = 1144847820424228914 # ID del rol "Usuario"
                         role = discord.utils.get(interaction.guild.roles, id=role_id)
                         if role in interaction.user.roles:
                             await interaction.respond(f"**[!]** {usuario}, ya estas verificado en el servidor de discord.", ephemeral=True)
@@ -263,7 +265,7 @@ async def embed(ctx, titulo, descripcion, color_embed: str, contentenido,banner_
         await ctx.respond("No estas autorizado para usar este comando.", ephemeral=True)
 @crear.command(name="verificacion", description="Crea el dialogo de verificacion")
 async def verificacion(ctx):
-    if ctx.author.id == os.getenv('OWNER_ID'):
+    if ctx.author.id == owner_id:
         embed = discord.Embed(title="Verificacion (Cuentas) | GreenZone Roleplay")
         embed.add_field(name="Informacion", value="Vincula y verifica la cuenta del servidor con la de nuestro discord.")
         embed.set_image(url="https://cdn.discordapp.com/attachments/1114178012397719552/1115847426046185482/DA7GnGE.png")
