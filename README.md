@@ -17,8 +17,8 @@ Sigue estos pasos para poner en marcha el bot en tu servidor:
 
 > Instalacion manual
 - `pip install samp-client`
-- `pip install python-dotenv`
-- `pip install mysql-connector-python`
+- `pip install load_dotenv`
+- `pip install mysql.connector`
 - `pip install py-cord`
 
 > Instalacion automatica
