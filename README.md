@@ -41,30 +41,9 @@ Aunque soy principiante en el desarrollo de bots, he creado esta herramienta con
 
 Si encuentras útil este proyecto y deseas apoyar su desarrollo continuo, considera realizar una donación. Cualquier contribución es muy apreciada y nos ayudará a mantener y mejorar este bot.
 
-**PayPal**: [sorac.games@gmail.com](mailto:sorac.games@gmail.com)
+**PayPal**: [carlosesteban.uni@gmail.com](mailto:sorac.games@gmail.com)
 
 ¡Gracias por tu generosidad y apoyo!
 
   *Nota #2: Respetar creditos*
-## Créditos de Bibliotecas
-
-Agradecemos a las siguientes bibliotecas y proyectos de código abierto por hacer posible este proyecto:
-
-- aiohttp==3.8.5
-- aiosignal==1.3.1
-- async-timeout==4.0.3
-- attrs==23.1.0
-- certifi==2023.7.22
-- charset-normalizer==3.2.0
-- frozenlist==1.4.0
-- idna==3.4
-- multidict==6.0.4
-- mysql-connector-python==8.1.0
-- protobuf==4.21.12
-- py-cord==2.4.1
-- python-dotenv==1.0.0
-- requests==2.31.0
-- samp-client==3.0.1
-- urllib3==2.0.4
-- yarl==1.9.2
 
