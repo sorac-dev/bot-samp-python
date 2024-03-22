@@ -4,7 +4,6 @@ import discord
 import asyncio
 import os
 from dotenv import load_dotenv
-from samp_client.client import SampClient
 import mysql.connector
 import random
 
@@ -23,22 +22,11 @@ owner_id = 352897123014148096
 #          Cargando bot       #
 #=============================#
 bot = discord.Bot()
-
-async def update_player_count():
-    while True:
-        with SampClient(address='s1.fenixzone.com', port='7777') as client:
-            info = client.get_server_info()
-            jugando = info.players
-            
-            # Actualizar el estado del bot
-            await bot.change_presence(activity=discord.Game(name=f"{botname} con {jugando} jugadores"))
-
-        await asyncio.sleep(60)
         
 @bot.event
 async def on_ready():
     #El bot esta jugando, actualmente el nombre del bot o servidor.
-    bot.loop.create_task(update_player_count())
+    bot.change_presence(activity=discord.Game(name=f"Jugando a {server_ip}"))
 
     bot.add_view(verificarBoton())
     
