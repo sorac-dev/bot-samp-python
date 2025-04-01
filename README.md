@@ -41,7 +41,7 @@ Aunque soy principiante en el desarrollo de bots, he creado esta herramienta con
 
 Si encuentras útil este proyecto y deseas apoyar su desarrollo continuo, considera realizar una donación. Cualquier contribución es muy apreciada y nos ayudará a mantener y mejorar este bot.
 
-**PayPal**: [carlosesteban.uni@gmail.com](mailto:sorac.games@gmail.com)
+**PayPal**: [sorac.pagos@gmail.com](mailto:sorac.pagos@gmail.com)
 
 ¡Gracias por tu generosidad y apoyo!
 
